@@ -29,6 +29,9 @@ router
 router
     .route('/:userId/friends/:friendId')
     .put(addFriend)
+
+// /api//users/<userId>/friends/<friendId>/remove route
+router.route('/:userId/friends/:friendId/remove')
     .put(removeFriend);
 
 // Export the router
