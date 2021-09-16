@@ -17,7 +17,7 @@ app.use(express.static('public'));
 
 // Connect to the database
 mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost/social-network-api', {
-  useFindAndModify: false,
+  // useFindAndModify: false,
   useNewUrlParser: true,
   useUnifiedTopology: true
 });

@@ -1,6 +1,8 @@
 // Import the mongoose npm package
 const { Schema, model } = require('mongoose');
 
+// Import 
+
 // Import the dateFormat function
 const dateFormat = require('../utils/dateFormat');
 
@@ -15,19 +17,19 @@ const UserSchema = new Schema({
         type: String,
         required: [true, 'Please enter Email Address'],
         unique: true,
-        lowercase: true,
-        validate: {
-            validator: () => Promise.resolve(false),
-            message: 'Email validation failed'
-        }
+        lowercase: true
+        // validate: {
+        //     validator: () => Promise.resolve(false),
+        //     message: 'Email validation failed'
+        // }
     },
     thoughts: [{
         type: Schema.Types.ObjectId,
-        ref: Thought
+        ref: "Thought"
     }],
     friends: [{
         type: Schema.Types.ObjectId,
-        ref: User
+        ref: "User"
     }]
     },
     {

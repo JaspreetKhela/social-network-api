@@ -1,29 +1,30 @@
 // Import the mongoose npm package
-const { Schema, model } = require('mongoose');
+const { Schema, model, Types } = require('mongoose');
 
 // Import the dateFormat function
 const dateFormat = require('../utils/dateFormat');
 
 // Createa the Reaction Schema
-const ReactionSchema = new Schema({
-    reactionId: {
-        type: Schema.Types.ObjectId,
-        default: () => new Types.ObjectId()
-    },
-    reactionBody: {
-        type: String,
-        maxLength: 280,
-        required: true
-    },
-    username: {
-        type: String,
-        required: true
-    },
-    createdAt: {
-        type: Date,
-        default: Date.now,
-        get: createdAtVal => dateFormat(createdAtVal)
-    }
+const ReactionSchema = new Schema(
+    {
+        reactionId: {
+            type: Schema.Types.ObjectId,
+            default: () => new Types.ObjectId()
+        },
+        reactionBody: {
+            type: String,
+            maxLength: 280,
+            required: true
+        },
+        username: {
+            type: String,
+            required: true
+        },
+        createdAt: {
+            type: Date,
+            default: Date.now,
+            get: createdAtVal => dateFormat(createdAtVal)
+        }
     },
     {
         toJSON: {
@@ -33,35 +34,36 @@ const ReactionSchema = new Schema({
 );
 
 // Create the Thought Schema
-const ThoughtSchema = new Schema({
-    thoughtText: {
-        type: String,
-        maxLength: 280,
-        required: true
-    },
-    createdAt: {
-        type: Date,
-        default: Date.now,
-        get: createdAtVal => dateFormat(createdAtVal)
-    },
-    username: {
-        type: String,
-        required: true
-    },
-    reactions: [ReactionSchema]
+const ThoughtSchema = new Schema(
+    {
+        thoughtText: {
+            type: String,
+            maxLength: 280,
+            required: true
+        },
+        createdAt: {
+            type: Date,
+            default: Date.now,
+            get: createdAtVal => dateFormat(createdAtVal)
+        },
+        username: {
+            type: String,
+            required: true
+        },
+        reactions: [ReactionSchema]
     },
     {
         toJSON: {
-        virtuals: true,
-        getters: true
+            virtuals: true,
+            getters: true
         },
-        // prevents virtuals from creating duplicate of _id as `id`
+        // Prevents virtuals from creating duplicate of _id as `id`
         id: false
     }
 );
 
 // Define a mongoose virtual for counting a the number of reactions that a thought has
-UserSchema.virtual("reactionCount").get(function() {
+ThoughtSchema.virtual("reactionCount").get(function() {
     return this.reactions.length;
 });
 
