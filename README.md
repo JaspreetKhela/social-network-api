@@ -27,7 +27,20 @@
 To use this application, navigate to the root folder in the cloned repository's directory and simply type `npm start` into the Command Line Interface to start the server.
 
 **Screenshots**:
-
+<img width="1440" alt="Screen Shot 2021-09-16 at 1 32 47 AM" src="https://user-images.githubusercontent.com/80941606/133558109-4b4b3b90-ec0d-4d7e-9c32-048357a7578a.png">
+<img width="1440" alt="Screen Shot 2021-09-16 at 1 33 10 AM" src="https://user-images.githubusercontent.com/80941606/133558128-acbc9584-7c30-4e66-931d-a04b741d167f.png">
+<img width="1440" alt="Screen Shot 2021-09-16 at 1 33 45 AM" src="https://user-images.githubusercontent.com/80941606/133558148-74254846-5cf8-4775-8552-63efc194250a.png">
+<img width="1440" alt="Screen Shot 2021-09-16 at 1 35 22 AM" src="https://user-images.githubusercontent.com/80941606/133558161-f9872fcb-ff78-4480-9c2b-b89e453412cd.png">
+<img width="1440" alt="Screen Shot 2021-09-16 at 1 35 57 AM" src="https://user-images.githubusercontent.com/80941606/133558166-13a69aa7-307a-45c8-a4c4-0e6c1f25d6a5.png">
+<img width="1440" alt="Screen Shot 2021-09-16 at 1 37 06 AM" src="https://user-images.githubusercontent.com/80941606/133558175-53d88f00-0815-4884-9216-c5e5e8a33e3d.png">
+<img width="1440" alt="Screen Shot 2021-09-16 at 1 39 45 AM" src="https://user-images.githubusercontent.com/80941606/133558185-6d71693f-bce5-4678-9daf-0a8810f516e5.png">
+<img width="1440" alt="Screen Shot 2021-09-16 at 1 50 07 AM" src="https://user-images.githubusercontent.com/80941606/133558193-5ef4ef00-fae4-4c55-9222-9480db90d3c3.png">
+<img width="1440" alt="Screen Shot 2021-09-16 at 1 50 28 AM" src="https://user-images.githubusercontent.com/80941606/133558202-f1aadc3e-7825-471b-ad4b-a6650af07f12.png">
+<img width="1440" alt="Screen Shot 2021-09-16 at 1 50 42 AM" src="https://user-images.githubusercontent.com/80941606/133558209-3ae31431-0094-4798-a550-26e5e8a43e19.png">
+<img width="1440" alt="Screen Shot 2021-09-16 at 1 52 42 AM" src="https://user-images.githubusercontent.com/80941606/133558214-c4b9cab7-140b-4326-a243-3542c4781685.png">
+<img width="1440" alt="Screen Shot 2021-09-16 at 1 57 52 AM" src="https://user-images.githubusercontent.com/80941606/133558226-d0d51ef1-19d8-4cc7-823c-2c7966a2ab18.png">
+<img width="1440" alt="Screen Shot 2021-09-16 at 1 58 33 AM" src="https://user-images.githubusercontent.com/80941606/133558235-cca16cf2-48ce-4de6-8ba2-64df569e1721.png">
+<img width="1440" alt="Screen Shot 2021-09-16 at 2 00 08 AM" src="https://user-images.githubusercontent.com/80941606/133558243-6269bb94-f617-4b05-896d-c96099503e4f.png">
 
 ### Features
 This application allows for CRUD operations on a database through API endpoints.
