@@ -1,7 +1,7 @@
 # Social Network Back-End
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-**Description**: This is social network back-end Node.js application. This back-end application provides the ability to perform CRUD operations on a database containing users, users' thoughts, and reactions to users' thoughts. This application steamlines the database creation and maintenance process by allowing a user to focus on the front-end of the social network application while the user can perform CRUD operations on the database through API endpoints.
+**Description**: This is a social network back-end Node.js application. This back-end application provides the ability to perform CRUD operations on a database containing users, users' thoughts, and reactions to users' thoughts. This application steamlines the database creation and maintenance process by allowing a user to focus on the front-end of the social network application while the user can perform CRUD operations on the database through API endpoints.
 
 **Deployment Link**: Please see [installation](#installation) instructions below.
 
