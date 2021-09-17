@@ -44,7 +44,7 @@ To use this application, navigate to the root folder in the cloned repository's 
 <img width="1440" alt="Screen Shot 2021-09-16 at 2 00 08 AM" src="https://user-images.githubusercontent.com/80941606/133558243-6269bb94-f617-4b05-896d-c96099503e4f.png">
 
 ### Features
-This application allows for CRUD operations on a database through API endpoints.
+This application allows for CRUD operations on users, thoughts, and reactions stored within a database through API endpoints.
 
 ### Testing
 This application can be directly tested in [Insomnia](https://insomnia.rest/download).
